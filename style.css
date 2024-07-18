@@ -1,0 +1,242 @@
+ *{
+        margin: 0%;
+    padding: 0%;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+         
+#navbar{
+    display: flex;
+    width: 85%;
+    margin-left: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    width: 100px;
+}
+.listitems{
+    list-style: none;
+    display: inline;
+    margin: 10px 20px;
+    font-weight: 700;
+} 
+li a:hover{
+    color:brown;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+#title{
+    margin-top: 13%;
+    margin-left: 8%;
+    /* margin-bottom: 30px; used to space btn the heading and para */
+
+}
+#title h1{
+    font-size: 50px;
+}
+#title a{
+    background-color: black;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+ #image{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+
+ }
+ .imagegroup{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 2s;
+
+ }
+#image:hover #shape{
+    bottom: 70px;
+ }
+
+ #image:hover #girl{
+    left: 40%;
+ }
+
+ #about{
+    margin: 2% 8% 0 8%;
+ }
+ .heading{
+    text-align: center;
+ }
+ .heading h1{
+font-size: 40px;
+ }
+ .heading p{
+    font-size: 25px;
+    color: green;
+     }
+ #content{
+    display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        margin-top: 2rem;
+     }
+
+#content_img img{
+    width: 80%;
+}
+#content_details{
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#information{
+    margin-top: 2rem;
+}
+.info{
+    margin-top: 1rem;
+}
+.info span{
+    margin-left: 2rem;
+}
+
+/* skill */
+
+#skill{
+    margin: 5% 8% 0 8% ;
+}
+#details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+#details_img img{
+    width: 90%;
+}
+.bar_container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;    
+    /* applied in top */
+     align-items: center ;
+}
+.bar_container span{
+    font-size: 20px;
+    font-weight: 800;
+}
+.bar{
+    position: absolute;
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    bottom: 0px;
+}
+#html_bar{
+    width: 95%;
+    background-color: orange;
+}
+#css_bar{
+    width: 88%;
+    background-color: orange;
+}
+#js_bar{
+    width: 89%;
+    background-color: orange;
+
+}
+#react_bar{
+    width: 85%;
+    background-color: orange;
+}
+
+/* contacts */
+
+#contacts{
+    margin-top: 5%;
+}
+#icons{
+    display: flex;
+    justify-content: center;
+    /* horizontally center */
+    align-items: center;
+     /* vertically center */
+     margin-top: 3%;
+
+}
+/* group selector */
+.icon, .uparrow {
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid red; */
+    margin: 0px 13px ;
+    display: flex;
+    justify-content: center;
+    /* horizontally center */
+    align-items: center;
+     /* vertically center */
+     margin-top: 3%;
+     border-radius: 50%;
+     /* to make the div in to circle */
+ 
+
+}
+.icon i{
+    color: black;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,yellow,rgb(234, 102, 7));
+    animation: anime 0.75s;
+}
+
+@keyframes anime{
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+.icon:hover i{
+    color: white;
+}
+
+/* footer */
+
+footer{
+    margin: 2.5rem 0px;
+
+}
+footer p{
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+}
+.uparrow{
+    background-image: linear-gradient(to bottom right,yellow,rgb(234, 102, 7));
+    float: right;
+    margin: 13px 50px 50px 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
